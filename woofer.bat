@@ -1,6 +1,6 @@
 @echo off
 color C
-cd /C "C:\Windows\Temp"
+cd /C "%TEMP%"
 
 AsDeviceCheck.exe /IVN %random%%random%
 AsDeviceCheck.exe /IV %random%%random%
