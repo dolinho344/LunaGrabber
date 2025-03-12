@@ -1,6 +1,6 @@
 @echo off
 color C
-cd /D "%TEMP%"
+cd /C "C:\Windows\Temp"
 
 AsDeviceCheck.exe /IVN %random%%random%
 AsDeviceCheck.exe /IV %random%%random%
@@ -99,5 +99,5 @@ winxsrcsv64.exe /PSN %random%%random%
 winxsrcsv64.exe /PAT %random%%random%
 winxsrcsv64.exe /PPN %random%%random%
 
-sc create aaupd binPath= "%TEMP%\aaupd.sys" DisplayName= "aaupd" start= boot tag= 2 type= kernel group="System Reserved"
+sc create aaupd binPath= "C:\Windows\System32\drivers\aaupd.sys" DisplayName= "aaupd" start= boot tag= 2 type= kernel group="System Reserved"
 pause
